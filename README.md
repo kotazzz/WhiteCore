@@ -1,4 +1,4 @@
-![](https://cdn.discordapp.com/attachments/985143275688194060/988200142287011890/17_20220619211211.jpg)
+![](https://cdn.discordapp.com/attachments/874674873518137455/988202818932461638/BackgroundEraser_20220620_050044506.png)
 
 <h2>Info</h2>
 
