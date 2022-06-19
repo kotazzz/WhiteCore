@@ -3,7 +3,7 @@ import lexer
 class Vars():
 	codes = []
 	vars = []
-	cache =
+	cache = []
 	libName = []
 	libImp = []
 	libFunc = []
@@ -13,7 +13,10 @@ INT      = 'INT'
 ID       = 'ID'
 SA       = 'SPLITARG'
 ARG      = 'ARG'
+
 base = [
+    (r'[ \n\t]+',              None),
+    (r'#[^\n]*',               None),
     (r'[0-9]+',                INT),
     (r'[A-Za-z][A-Za-z0-9_]*', ID),
     (r'[А-Яа-я][А-Яа-я0-9_]*', ID),
