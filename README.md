@@ -15,5 +15,5 @@
 
 <h2 align="center">License</h2>
 
-![LICENSE](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
+- ![LICENSE](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
 </b>
