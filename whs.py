@@ -1,3 +1,7 @@
+#WhiteCore 0.0.1 by Harxi
+#email: sup.harzi@gmail.com
+
+
 import lexer
 
 class Vars():
