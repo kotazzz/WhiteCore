@@ -9,4 +9,4 @@ def read(filename):
 			except IndexError as error:
 				print(error)
 			
-read('my')
+read(sys.argv[2])
