@@ -5,7 +5,7 @@
 
 ![](https://img.shields.io/badge/WhiteCore_created_by-Harxi-ff69b4)
 ![](https://img.shields.io/badge/WhiteCore_verison-0.0.1-ff69b4)
-![](https://img.shields.io/github/stars/Huxill/WhiteCore?color=ff69b4&label=WhiteCore%20Stars&logoColor=ff69b4)
+![](https://img.shields.io/github/stars/Harxi/WhiteCore?color=ff69b4&label=WhiteCore%20Stars&logoColor=ff69b4)
 <h2>Documentation</h2>
 
 [DOCUMENTATION](https://goo.su/tt7ffWD)
