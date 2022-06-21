@@ -16,9 +16,9 @@ class Tokens():
 	
 	# FOR CORE DON'T EDIT #
 	RESERVED = 'RESERVED'
-	INT      = 'INT'
-	ID       = 'ID'
-	ARG      = 'ARG'
+	INT = 'INT'
+	ID = 'ID'
+	ARG = 'ARG'
 	# FOR CORE DON'T EDIT #
 	
 	TokenSplits = [
