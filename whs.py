@@ -1,9 +1,7 @@
 #WhiteCore 0.0.2 by Harxi
 #Email: sup.harxi@gmail.com
 
-
 import lexer
-
 
 class Data():
 	variables = []
@@ -14,7 +12,6 @@ class Data():
 	libFunc = []
 	# FOR CORE DON'T EDIT #
 
-	
 class Tokens():	
 	
 	# FOR CORE DON'T EDIT #
@@ -35,18 +32,18 @@ class Tokens():
 	def imp(characters):
 	    return lexer.lex(characters, Tokens.TokenSplits)
 
-
 class Basic():
 	Data = Data()
 	Tokens = Tokens()
-
 
 class Core():
 	# FOR CORE DON'T EDIT #
 	def run(cmd):
 		token = Tokens.imp(cmd)
+		
 		if token == []:
 			pass
+		
 		elif token[0][0] == 'use':
 			with open(f'{token[1][0]}.py', 'r') as file:
 				for n, line in enumerate(file, 1):
@@ -67,10 +64,13 @@ class Core():
 						libfunc = libfunc.pop(len(libfunc)-1)
 					else:
 						pass
+						
 		else:
 			lib = []
+			
 			for libs in Data.libName:
 				lib.append(__import__(libs))
+				
 			for index, keyword in enumerate(Data.libImp):
 				for ptdindex, method in enumerate(keyword):
 					if token[0][0] == method:
