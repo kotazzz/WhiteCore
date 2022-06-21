@@ -8,7 +8,7 @@
 ![](https://img.shields.io/github/stars/Harxi/WhiteCore?color=ff69b4&label=WhiteCore%20Stars&logoColor=ff69b4)
 <h2>Documentation</h2>
 
-[DOCUMENTATION](https://goo.su/tt7ffWD)
+[![](https://img.shields.io/badge/WhiteCore-DOCS-ff69b4)](https://goo.su/tt7ffWD)
 
 <h2>Links</h2>
 
