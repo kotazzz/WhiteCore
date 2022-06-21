@@ -22,9 +22,9 @@ class Tokens():
 	# FOR CORE DON'T EDIT #
 	
 	TokenSplits = [
-    (r'[ \n\t]+',              None),
-    (r'#[^\n]*',               None),
-    (r'[0-9]+',                INT),
+    (r'[ \n\t]+', None),
+    (r'#[^\n]*', None),
+    (r'[0-9]+', INT),
     (r'[A-Za-z][A-Za-z0-9_]*', ID),
     (r'[А-Яа-я][А-Яа-я0-9_]*', ID),
 	]
