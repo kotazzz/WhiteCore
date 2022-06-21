@@ -1,4 +1,5 @@
 import sys
+
 import whs
 
 def read(filename):
