@@ -5,8 +5,8 @@ def read(filename):
 		for n, line in enumerate(file, 1):
 			line = line.rstrip('\n')
 			try:
-				whs.Core.imp(line)
-			except IndexError as error:
-				print(error)
+				whs.Core.run(line)
+			except IndexError:
+				print('Argument is not found')
 			
 read(sys.argv[1])
