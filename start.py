@@ -12,3 +12,4 @@ def read(filename):
 				print('Argument is not found')
 			
 read(sys.argv[1])
+
