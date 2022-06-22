@@ -1,4 +1,4 @@
-#WhiteCore 0.0.2 by Harxi
+#WhiteCore 0.0.3 by Harxi
 #Email: sup.harxi@gmail.com
 
 import lexer
@@ -23,7 +23,7 @@ class Tokens():
 	
 	TokenSplits = [
     (r'[ \n\t]+', None),
-    (r'#[^\n]*', None),
+    (r'#[^\n]*',  None),
     (r'[0-9]+', INT),
     (r'[A-Za-z][A-Za-z0-9_]*', ID),
     (r'[А-Яа-я][А-Яа-я0-9_]*', ID),
@@ -33,6 +33,7 @@ class Tokens():
 	    return lexer.lex(characters, Tokens.TokenSplits)
 
 class Basic():
+	__version__ = '0.0.3'
 	Data = Data()
 	Tokens = Tokens()
 
@@ -47,6 +48,14 @@ class Core():
 		elif token[0][0] == 'use':
 			with open(f'{token[1][0]}.py', 'r') as file:
 				for n, line in enumerate(file, 1):
+					if n == 1:
+						version = line.replace('#', '')
+						version = version.split(' ')[1]
+						if version != Basic.__version__:
+							print('Impossible to interpret the file, it uses an outdated core')
+							exit()
+						else:
+							continue
 					if n == 2:
 						libname = line.replace('#', '')
 						libname = libname.split(' ')[0]
@@ -62,6 +71,7 @@ class Core():
 						libfunc = libfunc.split('/')
 						Data.libFunc += [libfunc]
 						libfunc = libfunc.pop(len(libfunc)-1)
+						break
 					else:
 						pass
 						
